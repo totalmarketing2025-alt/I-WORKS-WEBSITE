@@ -141,3 +141,42 @@ body{min-width:0}
 }
 @media(hover:none){.btn,.chip{touch-action:manipulation}}
 @media(prefers-reduced-motion:reduce){.scanlines{animation:none!important}}
+
+/* SARISA current-build presenter */
+.sarisa-featured{background:linear-gradient(145deg,#15271d,#0a1410 80%);border-color:#8c7540}
+.sarisa .meta{color:#d8bd79}
+.sarisa-title{display:flex;align-items:center;gap:16px;margin:20px 0}
+.sarisa-title img{width:64px;height:64px;border:1px solid #506143;border-radius:15px;box-shadow:0 8px 28px #0007}
+.sarisa-title h3{margin:0;font-size:clamp(40px,5vw,66px);letter-spacing:.04em;color:#e5d092}
+.sarisa-build{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:13px 15px;margin:20px 0;background:#0a1711;border:1px solid #3d5940;border-radius:10px}
+.sarisa-build strong{font-size:10px;letter-spacing:1px;color:#d5c181}
+.sarisa-build div{display:flex;gap:8px;flex-wrap:wrap}
+.sarisa-build a{padding:6px 9px;border-radius:6px;border:1px solid #426d4d;background:#10271a;color:#a9e7b3;font-size:10px;font-weight:800}
+.sarisa-scope{padding:12px 14px;border-left:3px solid #d8bd79;background:#152319;color:#becbbb!important;font-size:12px!important}
+.sarisa-repolink{display:inline-block;margin-top:16px;color:#dfca8e}
+.sarisa-panel{width:100%;padding:18px;background:radial-gradient(ellipse at 80% 0%,#263923,#101d16 58%,#0b1511);border:1px solid #526343;border-radius:16px;box-shadow:0 20px 55px #0008;overflow:hidden}
+.sarisa-panel-head{display:flex;align-items:center;gap:12px;padding-bottom:15px;border-bottom:1px solid #344733}
+.sarisa-panel-head>img{flex:0 0 48px;border:1px solid #596b45;border-radius:12px}
+.sarisa-panel-head>div{display:flex;flex:1;flex-direction:column;gap:3px;min-width:0}
+.sarisa-panel-head small,.sarisa-capabilities small,.sarisa-workflow-state small{font-size:9px;letter-spacing:1.2px;color:#98ac98}
+.sarisa-panel-head b{font-size:13px;letter-spacing:.8px;color:#e0d19c;overflow-wrap:anywhere}
+.sarisa-preview-tag{font-size:8px;letter-spacing:.8px;padding:6px 8px;border:1px solid #8a7141;border-radius:100px;color:#e8d294;white-space:nowrap}
+.sarisa-capabilities{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:14px 0}
+.sarisa-capabilities>div{min-width:0;padding:11px 9px;background:#0b1711;border:1px solid #314431;border-radius:9px}
+.sarisa-capabilities small,.sarisa-capabilities b{display:block}
+.sarisa-capabilities b{margin-top:5px;font-size:10px;color:#dfd5b6;overflow-wrap:anywhere}
+.sarisa-map-preview{position:relative;height:190px;overflow:hidden;border:1px solid #4a5e42;border-radius:10px;background-color:#14281c;background-image:linear-gradient(30deg,transparent 47%,#4f6b4a 48%,#4f6b4a 51%,transparent 52%),linear-gradient(145deg,transparent 46%,#334b36 47%,#334b36 50%,transparent 51%),linear-gradient(#203b2b 1px,transparent 1px),linear-gradient(90deg,#203b2b 1px,transparent 1px);background-size:100% 100%,100% 100%,28px 28px,28px 28px}
+.sarisa-map-caption{position:absolute;z-index:2;top:10px;left:12px;padding:4px 7px;border-radius:5px;background:#07120ddc;color:#d5d0b4;font-size:8px;letter-spacing:1px}
+.sarisa-boundary{position:absolute;left:18%;top:24%;width:63%;height:57%;border:2px dashed #d7bf75;clip-path:polygon(13% 2%,91% 8%,100% 58%,72% 100%,8% 82%,0 32%);background:#d2bb6215}
+.sarisa-route-line{position:absolute;left:25%;top:31%;width:48%;height:46%;background:repeating-linear-gradient(0deg,transparent 0 12px,#9dcc7a 13px 14px,transparent 15px 24px);opacity:.9}
+.sarisa-map-point,.sarisa-map-pin{position:absolute;display:grid;place-items:center;border-radius:50%;font-size:10px;font-weight:900}
+.sarisa-map-point{width:22px;height:22px;background:#d8bd79;color:#111a13}
+.sarisa-map-point.p1{left:17%;top:22%}.sarisa-map-point.p2{right:16%;bottom:16%}
+.sarisa-map-pin{left:51%;top:46%;width:28px;height:28px;border:1px solid #9fd18e;color:#c4eca9;background:#0a1712c9;font-size:19px}
+.sarisa-workflow-state{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}
+.sarisa-workflow-state>div{padding:10px 12px;border:1px solid #314431;border-radius:8px;background:#0b1711}
+.sarisa-workflow-state small,.sarisa-workflow-state strong{display:block}
+.sarisa-workflow-state strong{margin-top:4px;font-size:12px;color:#d8bd79;overflow-wrap:anywhere}
+.sarisa .eventlog{margin-top:10px}
+@media(max-width:700px){.sarisa-panel{padding:12px}.sarisa-capabilities{grid-template-columns:1fr}.sarisa-capabilities>div{padding:9px}.sarisa-map-preview{height:170px}.sarisa-preview-tag{font-size:7px;padding:5px}.sarisa-title{gap:10px}.sarisa-title img{width:52px;height:52px}.sarisa-build{align-items:flex-start;flex-direction:column}}
+@media(max-width:360px){.sarisa-title img{width:44px;height:44px}.sarisa-title h3{font-size:36px}.sarisa-panel-head{gap:8px}.sarisa-preview-tag{white-space:normal;text-align:center}}
