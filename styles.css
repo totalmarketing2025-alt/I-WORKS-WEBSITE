@@ -180,3 +180,40 @@ body{min-width:0}
 .sarisa .eventlog{margin-top:10px}
 @media(max-width:700px){.sarisa-panel{padding:12px}.sarisa-capabilities{grid-template-columns:1fr}.sarisa-capabilities>div{padding:9px}.sarisa-map-preview{height:170px}.sarisa-preview-tag{font-size:7px;padding:5px}.sarisa-title{gap:10px}.sarisa-title img{width:52px;height:52px}.sarisa-build{align-items:flex-start;flex-direction:column}}
 @media(max-width:360px){.sarisa-title img{width:44px;height:44px}.sarisa-title h3{font-size:36px}.sarisa-panel-head{gap:8px}.sarisa-preview-tag{white-space:normal;text-align:center}}
+
+/* Fire Eye wildfire-warning concept */
+.fireeye{border-color:#875d34;background:linear-gradient(145deg,#18251b,#0b1411 78%)}
+.fireeye .meta{color:#f0a356}
+.fireeye h3 span{color:#f0a356}
+.fireeye-title{display:flex;align-items:center;gap:14px;margin:20px 0}
+.fireeye-title img{width:62px;height:62px;padding:5px;border:1px solid #586847;border-radius:14px;background:#0b1711}
+.fireeye-title h3{margin:0;font-size:clamp(38px,4.6vw,60px);letter-spacing:.025em}
+.fireeye-scope{padding:13px 15px;margin-top:22px;border-left:3px solid #e99547;background:#241c14;color:#c9c1b4!important;font-size:12px!important}
+.fireeye-panel{width:100%;padding:17px;background:radial-gradient(ellipse at 75% 0%,#2b3a22,#101b15 57%,#0b1310);border:1px solid #5d6142;border-radius:16px;box-shadow:0 20px 55px #0008;overflow:hidden}
+.fireeye-panel-head{display:flex;align-items:center;gap:10px;padding-bottom:13px;border-bottom:1px solid #394431}
+.fireeye-panel-head>img{flex:0 0 44px;padding:3px;border:1px solid #69764e;border-radius:10px;background:#0b1711}
+.fireeye-panel-head>div{display:flex;flex:1;flex-direction:column;gap:4px;min-width:0}
+.fireeye-panel-head small,.fireeye-metrics small{font-size:8px;letter-spacing:1px;color:#b7b699}
+.fireeye-panel-head b{font-size:11px;letter-spacing:.6px;color:#f2dfbd;overflow-wrap:anywhere}
+.fireeye-panel-head>span{padding:5px 7px;border:1px solid #89643f;border-radius:100px;color:#f0b474;font-size:8px;letter-spacing:.6px;white-space:nowrap}
+.fireeye-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:12px 0}
+.fireeye-metrics>div{min-width:0;padding:10px 8px;background:#0c1711;border:1px solid #3b4935;border-radius:8px}
+.fireeye-metrics small,.fireeye-metrics b{display:block}
+.fireeye-metrics b{margin-top:5px;font-size:9px;color:#e3d8b5;overflow-wrap:anywhere}
+.fireeye-map-demo{position:relative;height:220px;overflow:hidden;border:1px solid #4a5a40;border-radius:10px;background-color:#13251a;background-image:linear-gradient(25deg,transparent 47%,#2d4935 48%,#2d4935 51%,transparent 52%),linear-gradient(145deg,transparent 46%,#34503a 47%,#34503a 50%,transparent 51%),linear-gradient(#21392a 1px,transparent 1px),linear-gradient(90deg,#21392a 1px,transparent 1px);background-size:100% 100%,100% 100%,30px 30px,30px 30px}
+.fireeye-map-label{position:absolute;z-index:5;top:10px;left:10px;padding:5px 7px;border-radius:5px;background:#08120ee8;color:#d7ceb0;font-size:8px;letter-spacing:.7px}
+.fireeye-ring{position:absolute;left:50%;top:54%;aspect-ratio:1;border:1px solid #8a96503d;border-radius:50%;transform:translate(-50%,-50%)}
+.fireeye-ring.ring-one{width:44%}.fireeye-ring.ring-two{width:68%}.fireeye-ring.ring-three{width:92%}
+.fireeye-tower-mark{position:absolute;z-index:3;left:50%;top:54%;display:flex;align-items:center;gap:5px;transform:translate(-50%,-50%);padding:5px 7px;border:1px solid #768351;border-radius:7px;background:#0a1712e8;color:#d7d7a8;font-size:8px;white-space:nowrap}
+.fireeye-tower-mark img{width:20px;height:20px}
+.fireeye-smoke-mark{position:absolute;z-index:3;right:22%;top:28%;display:grid;place-items:center;width:30px;height:30px;border:2px solid #f0a356;border-radius:50%;background:#633b24;color:#ffe1a7;font-weight:900;box-shadow:0 0 0 7px #f0a35622}
+.fireeye-smoke-mark span{position:absolute;left:-28px;top:26px;width:28px;height:2px;transform:rotate(28deg);transform-origin:right;background:#f0a356}
+.fireeye-camera-mark{position:absolute;z-index:2;display:grid;place-items:center;width:19px;height:19px;border:1px solid #9cad70;border-radius:50%;background:#1d3825;color:#d3e4a8;font-size:8px;font-weight:800}
+.fireeye-camera-mark.c1{left:20%;top:35%}.fireeye-camera-mark.c2{right:20%;top:40%}.fireeye-camera-mark.c3{right:27%;bottom:18%}.fireeye-camera-mark.c4{left:22%;bottom:20%}
+.fireeye-alert{display:flex;align-items:center;gap:9px;margin-top:10px;padding:10px 11px;border:1px solid #765334;border-radius:8px;background:#241a13}
+.fireeye-alert-dot{width:9px;height:9px;flex:0 0 9px;border-radius:50%;background:#f0a356;box-shadow:0 0 12px #f0a35688}
+.fireeye-alert>div{display:flex;flex-direction:column;gap:4px;min-width:0}
+.fireeye-alert small{font-size:8px;letter-spacing:.5px;color:#f1b678;overflow-wrap:anywhere}
+.fireeye-alert b{font-size:9px;color:#ddd4c1;overflow-wrap:anywhere}
+@media(max-width:700px){.fireeye-panel{padding:12px}.fireeye-metrics{grid-template-columns:1fr}.fireeye-map-demo{height:180px}.fireeye-title img{width:52px;height:52px}.fireeye-panel-head{gap:7px}.fireeye-panel-head>span{white-space:normal;text-align:center}}
+@media(max-width:360px){.fireeye-title img{width:44px;height:44px}.fireeye-title h3{font-size:34px}.fireeye-panel-head b{font-size:9px}.fireeye-panel-head>img{flex-basis:38px;width:38px;height:38px}}
