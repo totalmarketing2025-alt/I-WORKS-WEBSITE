@@ -1,21 +1,25 @@
-# I-WORKS v4.3 — Deep Audit & Responsive Fix
+# I-WORKS v4.4 — SARISA portfolio sync
 
-Static website, no build step. Unzip the package into the website repository root (where index.html is located).
+Static multilingual website for I-WORKS, with no build step. The SARISA presentation is synchronized to the public SARISA-AI-PLATFORM `main` branch as of 27 November 2026.
 
-## Audited and corrected
-- Mobile grid sizing and viewport overflow, including 320px Android devices.
-- 701–900px navigation collision: hamburger menu now appears before links become cramped.
-- Phone and telemetry flex sizing; small-camera labels and long text wrapping.
-- Mobile tap targets and small-screen dashboard readability.
-- Simulation log translations (EN/MK/SQ/RU), escape-to-close navigation, click-outside menu.
-- localStorage access gracefully handled when unavailable.
-- Accessibility labels for demo visualizations and menu.
+## SARISA information shown on the site
+- Android and Windows builds succeeded for the latest main commit, `2797136d9261c2b11918e95265a355bbe3be09ea`.
+- Offline YOLOX-Nano object analysis: Android camera frames and selected local images on Windows.
+- SAR target appearance search: up to eight reference photos, clothing/color similarity, and explicit operator confirmation for temporary session-only samples. This is not face recognition, identity confirmation, or model-weight training.
+- Map-based mission planning: draw a search boundary, generate sweep tracks, and save the route with the mission.
+- The SARISA panel is labeled as an illustrative workflow preview, without a live camera, mission, or drone connection.
 
-## Remaining limitations
-- No physical-device/browser automation run; test in Android Chrome, iOS Safari, and desktop.
-- Static demo illustrations are not live systems; StellarECC phone UI is an illustrative source-based reconstruction, not an app screenshot.
-- Some decorative and static dashboard labels remain in English; a complete localization pass is still needed.
-- No analytics, server backend, or real contact form; content is static.
+## Linked source and CI
+- SARISA repository: https://github.com/totalmarketing2025-alt/SARISA-AI-PLATFORM
+- Latest main commit: https://github.com/totalmarketing2025-alt/SARISA-AI-PLATFORM/commit/2797136d9261c2b11918e95265a355bbe3be09ea
+- Android Actions: https://github.com/totalmarketing2025-alt/SARISA-AI-PLATFORM/actions/runs/45915833156
+- Windows Actions: https://github.com/totalmarketing2025-alt/SARISA-AI-PLATFORM/actions/runs/45915833225
+
+## Existing site limitations
+- The page remains a static showcase without a backend or working contact form.
+- The StellarECC interface is an illustrative source-based reconstruction, not an app screenshot.
+- HAVOC GUARD camera activity remains fictional demonstration data.
+- SARISA has no physical drone connection or flight commands.
 
 ## Preview
 `python -m http.server 8084 --bind 127.0.0.1`
